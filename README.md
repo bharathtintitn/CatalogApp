@@ -11,3 +11,4 @@ Setup:
 
 1. Move into catalog folder.
 2. Create database by running ```python database_setup.py``` in catalog folder.
+3. Now run ```python sqlscript.py```, this script inserts data into catalog database.
