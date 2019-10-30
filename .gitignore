@@ -1,4 +1,4 @@
 env
-templates
 catalog.db
 README.txt
+database_setup.pyc
