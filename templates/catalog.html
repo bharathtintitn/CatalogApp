@@ -1,6 +1,18 @@
 <html>
    <body>
       <h1>{{ catalog.name }}</h1>
+
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <ul>
+         {% for m in messages %}
+         <li> {{m}} </li>
+         {% endfor %}
+      </ul>
+      {% endif %}
+      {% endwith %}
+
+
       <h2><a href='{{ url_for('new_item', category_id=catalog.id) }}'>Create New Item</a></h2>
       {% for i in items %}
 
